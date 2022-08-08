@@ -36,3 +36,7 @@
     ```
     ssh-keygen -t ed25519
     ```
+7. And don't forget about turning on `yarn`:
+    ```
+    corepack enable
+    ```
