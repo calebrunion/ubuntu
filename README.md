@@ -24,7 +24,7 @@
     ```
 4. [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) makes life less hard.
     ```
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash &&
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash &&
     source ~/.zshrc &&
     nvm install --lts &&
     node -v
