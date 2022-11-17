@@ -27,13 +27,11 @@
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash &&
     source ~/.zshrc &&
     nvm install --lts &&
-    node -v
+    node -v &&
+    corepack enable &&
+    yarn -v
     ```
 5. You'll probably want SSH keys too.
     ```
     ssh-keygen -t ed25519
-    ```
-6. And don't forget about turning on `yarn`:
-    ```
-    corepack enable
     ```
