@@ -31,9 +31,12 @@
     corepack enable &&
     yarn -v
     ```
-5. You'll probably want SSH keys too.
+5. SSH
     ```
     ssh-keygen -t ed25519
+    ```
+    ```
+    cat ~/.ssh/id_ed25519.pub
     ```
 6. Speedtest
     ```
