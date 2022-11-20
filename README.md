@@ -53,3 +53,8 @@
     ```
     gh auth login
     ```
+    ```
+    cd &&
+    gh repo clone workspaces .workspaces &&
+    mkdir Profession Hobby
+    ```
