@@ -35,3 +35,8 @@
     ```
     ssh-keygen -t ed25519
     ```
+6. Speedtest CLI
+    ```
+    curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash &&
+    sudo apt-get install speedtest
+    ```
