@@ -50,3 +50,6 @@
     && sudo apt install gh -y \
     && gh --version
     ```
+    ```
+    gh auth login
+    ```
