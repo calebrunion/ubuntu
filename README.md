@@ -29,7 +29,7 @@
     nvm install --lts &&
     node -v &&
     corepack enable &&
-    yarn -v
+    pnpm -v
     ```
 5. SSH
     ```
