@@ -2,7 +2,7 @@
 1. Keep things updated.
     ```
     sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y &&
-    sudo apt install git zsh curl trash-cli -y
+    sudo apt install git zsh -y
     ```
 2. You need a better CLI.
     ```
