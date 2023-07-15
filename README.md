@@ -44,6 +44,8 @@
     ```
     ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519 <<< y &&
     cat ~/.ssh/id_ed25519.pub
+    ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa <<< y &&
+    cat ~/.ssh/id_rsa.pub
     ```
 * Speedtest
     ```
