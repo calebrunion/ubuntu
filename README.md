@@ -1,14 +1,14 @@
 # Ubuntu Setup
-1. Keep things updated.
+* Keep things updated.
     ```
     sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y &&
     sudo apt install git zsh -y
     ```
-2. You need a better CLI.
+* You need a better CLI.
     ```
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
-3. Make it even better with zsh-plugins.
+* Make it even better with zsh-plugins.
     ```
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting &&
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -22,7 +22,7 @@
     ```
     source ~/.zshrc
     ```
-4. [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) makes life less hard.
+* [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) makes life less hard.
     ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash &&
     source ~/.zshrc &&
@@ -32,21 +32,20 @@
     pnpm -v
     ```
 * VS Code Server
-```
-curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-arm64' --output vscode_cli.tar.gz &&
-tar -xf vscode_cli.tar.gz &&
-rm vscode_cli.tar.gz &&
-sudo mv code /bin &&
-source ~/.zshrc
-```
-5. SSH
     ```
-    ssh-keygen -t ed25519
+    curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-arm64' --output vscode_cli.tar.gz &&
+    tar -xf vscode_cli.tar.gz &&
+    rm vscode_cli.tar.gz &&
+    sudo mv code /bin &&
+    source ~/.zshrc &&
+    code tunnel
     ```
+* SSH
     ```
+    ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519 <<< y &&
     cat ~/.ssh/id_ed25519.pub
     ```
-6. Speedtest
+* Speedtest
     ```
     curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash &&
     sudo apt-get install speedtest &&
