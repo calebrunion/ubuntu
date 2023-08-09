@@ -1,8 +1,7 @@
 # Ubuntu Setup
 Keep things updated.
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y ;
-sudo apt install git -y
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 ```
 You need a better CLI.
 ```
