@@ -29,7 +29,9 @@ source ~/.zshrc &&
 nvm install --lts &&
 node -v &&
 corepack enable &&
-pnpm -v
+pnpm -v &&
+pnpm setup &&
+source ~/.zshrc
 ```
 VS Code Server
 ```
