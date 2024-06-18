@@ -35,8 +35,9 @@ source ~/.zshrc
 ```
 Chrome Remote Desktop
 ```
+sudo apt install ubuntu-desktop &&
 curl -o crd.deb https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb &&
-dpkg -i crd.deb
+sudo dpkg -i crd.deb
 ```
 VS Code Server
 ```
