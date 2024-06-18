@@ -33,9 +33,14 @@ pnpm -v &&
 pnpm setup &&
 source ~/.zshrc
 ```
+Chrome Remote Desktop
+```
+curl -o crd.deb https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb &&
+dpkg -i crd.deb
+```
 VS Code Server
 ```
-curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-arm64' --output vscode_cli.tar.gz &&
+curl 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-arm64' --output vscode_cli.tar.gz &&
 tar -xf vscode_cli.tar.gz &&
 rm vscode_cli.tar.gz &&
 sudo mv code /bin &&
