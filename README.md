@@ -55,12 +55,6 @@ cat ~/.ssh/id_ed25519.pub
 ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa <<< y &&
 cat ~/.ssh/id_rsa.pub
 ```
-Speedtest
-```
-curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash &&
-sudo apt-get install speedtest &&
-speedtest
-```
 GitHub
 ```
 git config --global init.defaultBranch main;
