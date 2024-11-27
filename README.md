@@ -57,16 +57,13 @@ cat ~/.ssh/id_rsa.pub
 ```
 SSH
 ```
-ssh-pfl() {
+pfl() {
   if [ -z "$1" ]; then
-    echo "Usage: ssh-pfl <port>"
+    echo "Usage: pfl <port>"
     return 1
   fi
   local port=$1
   ssh PowerPro -L ${port}:localhost:${port}
 }
 ```
-&& sudo apt install gh -y \
-&& gh --version \
-&& gh auth login
-```
+
