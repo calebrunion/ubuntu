@@ -28,7 +28,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash 
 source ~/.zshrc &&
 nvm install --lts &&
 node -v &&
-npm i -g pnpm vercel &&
+npm i -g pnpm vercel bun &&
 pnpm -v &&
 pnpm setup &&
 source ~/.zshrc
