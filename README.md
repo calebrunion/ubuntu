@@ -33,37 +33,4 @@ pnpm -v &&
 pnpm setup &&
 source ~/.zshrc
 ```
-Chrome Remote Desktop
-```
-sudo apt install ubuntu-desktop &&
-curl -o crd.deb https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb &&
-sudo dpkg -i crd.deb
-```
-VS Code Server
-```
-curl 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-arm64' --output vscode_cli.tar.gz &&
-tar -xf vscode_cli.tar.gz &&
-rm vscode_cli.tar.gz &&
-sudo mv code /bin &&
-source ~/.zshrc &&
-code tunnel
-```
-SSH
-```
-ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519 <<< y &&
-cat ~/.ssh/id_ed25519.pub
-ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa <<< y &&
-cat ~/.ssh/id_rsa.pub
-```
-SSH
-```
-pfl() {
-  if [ -z "$1" ]; then
-    echo "Usage: pfl <port>"
-    return 1
-  fi
-  local port=$1
-  ssh PowerPro -L ${port}:localhost:${port}
-}
-```
 
